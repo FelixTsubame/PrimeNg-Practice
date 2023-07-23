@@ -1,0 +1,169 @@
+<div class="flex flex-column wrap gap-2">
+  <div class="flex grid justify-content-between pt-1">
+    <div class="col-6">
+      <p-button class="return" label="返回" styleClass="p-button-success" routerLink="/home"></p-button>
+      <span class="text-900 text-2xl font-bold">程式集</span>
+    </div>
+    <div class="col-6 flex flex-row-reverse flex-wrap search-block">
+      <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input type="text" pInputText formControlName="text"/>
+      </span>
+    </div>
+  </div>
+
+  <div class="card">
+  <div class="grid gap-3">
+    <div class="col-12 md:col-6 lg:col-3 xl:col-2 little-block">
+      <div class="card mb-0">
+          <div class="flex justify-content-between mb-3">
+              <div>
+                  <div class="flex align-items-center justify-content-center bg-green-800 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-heart-fill text-xl" style="color: aliceblue;" routerLink="/home/heart"></i>
+                  </div>
+                </div>
+              <div class="flex align-items-center justify-content-center border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                  <i class="pi pi-star-fill text-yellow-500 text-xl"></i>
+              </div>
+          </div>
+          <span class="text-900 font-bold" routerLink="/home/heart">心臟移植表單</span>
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-3 xl:col-2 little-block">
+      <div class="card mb-0">
+          <div class="flex justify-content-between mb-3">
+              <div>
+                  <div class="flex align-items-center justify-content-center bg-green-800 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-users text-xl" style="color: aliceblue;" routerLink="/home/cases"></i>
+                  </div>
+                </div>
+              <div class="flex align-items-center justify-content-center border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                  <i class="pi pi-star-fill text-yellow-500 text-xl"></i>
+              </div>
+          </div>
+          <span class="text-900 font-bold" routerLink="/home/cases">門診醫囑系統</span>
+      </div>
+    </div>
+    <div class="col-2 md:col-6 lg:col-2 xl:col-2 little-block">
+      <div class="card mb-0">
+          <div class="flex justify-content-between mb-3">
+              <div>
+                  <div class="flex align-items-center justify-content-center bg-orange-500 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-file text-xl" style="color: aliceblue;" routerLink="/home/casesfile"></i>
+                  </div>
+                </div>
+              <div class="flex align-items-center justify-content-center border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                  <i class="pi pi-star-fill text-yellow-500 text-xl"></i>
+              </div>
+          </div>
+          <span class="text-900 font-bold" routerLink="/home/casesfile">電子病歷查詢</span>
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-6 xl:col-2 little-block">
+      <div class="card mb-0">
+          <div class="flex justify-content-between mb-3">
+              <div>
+                  <div class="flex align-items-center justify-content-center bg-blue-400 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-building text-xl" style="color: aliceblue;" routerLink="/home/hospitalized"></i>
+                  </div>
+                </div>
+              <div class="flex align-items-center justify-content-center border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                  <i class="pi pi-star-fill text-yellow-500 text-xl"></i>
+              </div>
+          </div>
+          <span class="text-900 font-bold" routerLink="/home/hospitalized">住院醫囑系統</span>
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-6 xl:col-2 little-block">
+      <div class="card mb-0">
+          <div class="flex justify-content-between mb-3">
+              <div>
+                  <div class="flex align-items-center justify-content-center bg-pink-500 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-calendar text-xl" style="color: aliceblue;" routerLink="/home/scored"></i>
+                  </div>
+                </div>
+              <div class="flex align-items-center justify-content-center border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                  <i class="pi pi-star-fill text-yellow-500 text-xl"></i>
+              </div>
+          </div>
+          <span class="text-900 font-bold" routerLink="/home/scored">應用程式架構</span>
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-6 xl:col-2 little-block">
+      <div class="card mb-0">
+          <div class="flex justify-content-between mb-3">
+              <div>
+                  <div class="flex align-items-center justify-content-center bg-green-800 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-heart-fill text-xl" style="color: aliceblue;"></i>
+                  </div>
+                </div>
+              <div class="flex align-items-center justify-content-center border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                  <i class="pi pi-star-fill text-yellow-500 text-xl"></i>
+              </div>
+          </div>
+          <span class="text-900 font-bold">心臟移植表單</span>
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-6 xl:col-2 little-block">
+      <div class="card mb-0">
+          <div class="flex justify-content-between mb-3">
+              <div>
+                  <div class="flex align-items-center justify-content-center bg-green-800 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-users text-xl" style="color: aliceblue;"></i>
+                  </div>
+                </div>
+              <div class="flex align-items-center justify-content-center border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                  <i class="pi pi-star-fill text-yellow-500 text-xl"></i>
+              </div>
+          </div>
+          <span class="text-900 font-bold">門診醫囑系統</span>
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-6 xl:col-2 little-block">
+      <div class="card mb-0">
+          <div class="flex justify-content-between mb-3">
+              <div>
+                  <div class="flex align-items-center justify-content-center bg-orange-500 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-file text-xl" style="color: aliceblue;"></i>
+                  </div>
+                </div>
+              <div class="flex align-items-center justify-content-center border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                  <i class="pi pi-star-fill text-yellow-500 text-xl"></i>
+              </div>
+          </div>
+          <span class="text-900 font-bold">電子病歷查詢</span>
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-6 xl:col-2 little-block">
+      <div class="card mb-0">
+          <div class="flex justify-content-between mb-3">
+              <div>
+                  <div class="flex align-items-center justify-content-center bg-blue-400 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-building text-xl" style="color: aliceblue;"></i>
+                  </div>
+                </div>
+              <div class="flex align-items-center justify-content-center border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                  <i class="pi pi-star-fill text-yellow-500 text-xl"></i>
+              </div>
+          </div>
+          <span class="text-900 font-bold">住院醫囑系統</span>
+      </div>
+    </div>
+    <div class="col-12 md:col-6 lg:col-6 xl:col-2 little-block">
+      <div class="card mb-0">
+          <div class="flex justify-content-between mb-3">
+              <div>
+                  <div class="flex align-items-center justify-content-center bg-pink-500 border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                    <i class="pi pi-calendar text-xl" style="color: aliceblue;"></i>
+                  </div>
+                </div>
+              <div class="flex align-items-center justify-content-center border-round" [ngStyle]="{width: '2.5rem', height: '2.5rem'}">
+                  <i class="pi pi-star-fill text-yellow-500 text-xl"></i>
+              </div>
+          </div>
+          <span class="text-900 font-bold">考核管理系統</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

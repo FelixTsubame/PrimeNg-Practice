@@ -1,0 +1,26 @@
+  <p-card>
+      <ng-template pTemplate="header">
+        <div class="flex justify-content-between top-0 left-0 px-3 py-3 w-full font-bold">
+          <div class="header-text">
+            最新消息
+          </div>
+          <p-button label="查看更多" [routerLink]="['/home/notification']" routerLinkActive="router-link-active" ></p-button>
+        </div>
+      </ng-template>
+      <div class="card">
+        <p-table [value]="notifications" [scrollable]="true" scrollHeight="58vh" [resizableColumns]="true" styleClass="p-datatable-sm" [tableStyle]="{'font-size': '1rem'}">
+          <ng-template pTemplate="header">
+
+          </ng-template>
+          <ng-template pTemplate="body" let-notification>
+              <tr>
+                  <td class="table-column">{{notification.date}}</td>
+                  <td class="table-column">{{notification.context}}</td>
+                  <td class="table-column">
+                      <button pButton pRipple type="button" icon="pi pi-external-link" class="p-button p-component p-button-text p-button-icon-only"></button>
+                  </td>
+              </tr>
+          </ng-template>
+        </p-table>
+      </div>
+  </p-card>

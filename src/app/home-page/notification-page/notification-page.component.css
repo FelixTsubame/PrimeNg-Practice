@@ -1,0 +1,85 @@
+:host ::ng-deep .return {
+
+    .p-button{
+      border-radius: 80px;
+    }
+
+}
+
+:host ::ng-deep .uncompleted{
+  .p-button{
+    border-radius: 8px 8px 0px 0px;
+    background: rgb(189, 25, 25);
+    border-color: transparent;
+  }
+}
+
+:host ::ng-deep .p-datatable.p-datatable-sm .p-datatable-tbody > tr > td {
+  padding: 0.1rem 0.1rem;
+}
+
+:host ::ng-deep .normal{
+  .p-button{
+    border-radius: 8px 8px 0px 0px;
+    background: rgb(189, 107, 25);
+    border-color: transparent;
+  }
+}
+
+
+
+
+:host ::ng-deep .completed{
+  .p-button{
+    border-radius: 8px 8px 0px 0px;
+    background: rgb(36, 104, 231);
+    border-color: transparent;
+  }
+}
+
+.layout-sidebar {
+  display: flex;
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  top: 0rem;
+  left: 0rem;
+  background-color: #BFC9C2;
+  padding: .5rem ;
+  box-shadow: 0 3px 5px #00000005,0 0 2px #0000000d,0 1px 4px #00000014;
+}
+
+.main-block{
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.search-block{
+  align-items: end;
+}
+
+.uncompleted-tag{
+  display: flex;
+  width: 100px;
+  padding: 10px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px 8px 0px 0px;
+  background: rgb(173, 24, 24);
+
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px 0 90px;
+  height: 100%;
+}
+
+.grid{
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}

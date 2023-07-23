@@ -1,0 +1,18 @@
+<div class="button-list">
+  <img alt="logo" src="{{logoUrl}}" style="width: 32px; height: 32px; justify-content: center;" />
+  <p-button styleClass="p-button-text">
+    <img alt="home" src="{{homeUrl}}" routerLink="/home"/>
+  </p-button>
+  <p-button styleClass="p-button-text">
+    <img alt="user" src="{{iconUrl}}" style="width: 32px; height: 32px;"/>
+  </p-button>
+  <p-button styleClass="p-button-text" routerLink="/home/notification">
+    <i class="pi pi-bell text-3xl" style="color: black;" pBadge value="7"></i>
+  </p-button>
+  <p-button styleClass="p-button-text">
+    <img alt="menu" src="{{menuUrl}}" routerLink="/home/feature"/>
+  </p-button>
+    <p-button styleClass="p-button-text" routerLink="">
+      <img alt="logout" src="{{logoutUrl}}" />
+    </p-button>
+</div>

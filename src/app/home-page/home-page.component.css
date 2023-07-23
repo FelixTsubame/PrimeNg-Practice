@@ -1,0 +1,28 @@
+.layout-sidebar {
+  display: flex;
+  position: fixed;
+  width: 80px;
+  height: 100%;
+  top: 0rem;
+  left: 0rem;
+  background-color: #BFC9C2;
+  padding: .5rem ;
+  box-shadow: 0 3px 5px #00000005,0 0 2px #0000000d,0 1px 4px #00000014;
+}
+
+.main-block{
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: flex-start;
+  background-color: #ECEEEB;
+  flex-shrink: 0;
+}
+
+.context-block{
+  display: block;
+  height: 100%;
+  background-color: #ECEEEB;
+  position: static;
+  flex-shrink: 0;
+}

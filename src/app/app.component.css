@@ -1,0 +1,15 @@
+
+.background{
+  background: var(--his-sys-light-surface, #ECEEEB);
+  display: flex;
+  height: 100vh;
+}
+
+:host ::ng-deep his-login{
+  display: flex;
+  flex-shrink: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+

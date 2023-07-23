@@ -1,0 +1,62 @@
+<div class="flex flex-column wrap">
+  <div class="flex grid justify-content-between pt-1">
+    <div class="col-6">
+      <p-button class="return" label="返回" styleClass="p-button-success" routerLink="/home"></p-button>
+      <span class="text-900 text-2xl font-bold">最新消息</span>
+    </div>
+    <div class="col-6 flex flex-row-reverse flex-wrap search-block">
+      <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input type="text" pInputText formControlName="text"/>
+      </span>
+    </div>
+  </div>
+  <div class="col">
+    <p-button class="uncompleted" label="未完成" [disabled]="true"></p-button>
+    <p-table [value]="notifications" [scrollable]="true" scrollHeight="32vh" [resizableColumns]="true" styleClass="p-datatable-sm" [tableStyle]="{'font-size': '12px', 'width': '80vw'}">
+      <ng-template pTemplate="header">
+      </ng-template>
+      <ng-template pTemplate="body" let-notification>
+          <tr>
+              <td>{{notification.date}}</td>
+              <td>{{notification.context}}</td>
+              <td>
+                  <button pButton pRipple type="button" icon="pi pi-external-link" class="p-button p-component p-button-text p-button-icon-only"></button>
+              </td>
+          </tr>
+      </ng-template>
+    </p-table>
+  </div>
+  <div class="col">
+    <p-button class="normal" label="一般通知" [disabled]="true"></p-button>
+    <p-table [value]="notifications" [scrollable]="true" scrollHeight="13vh" [resizableColumns]="true" styleClass="p-datatable-sm" [tableStyle]="{'font-size': '12px', 'width': '80vw'}">
+      <ng-template pTemplate="header">
+      </ng-template>
+      <ng-template pTemplate="body" let-notification>
+          <tr>
+              <td>{{notification.date}}</td>
+              <td>{{notification.context}}</td>
+              <td>
+                  <button pButton pRipple type="button" icon="pi pi-external-link" class="p-button p-component p-button-text p-button-icon-only"></button>
+              </td>
+          </tr>
+      </ng-template>
+    </p-table>
+  </div>
+  <div class="col">
+    <p-button class="completed" label="已完成" [disabled]="true"></p-button>
+    <p-table [value]="notifications" [scrollable]="true" scrollHeight="20vh" [resizableColumns]="true" styleClass="p-datatable-sm" [tableStyle]="{'font-size': '12px', 'width': '80vw'}">
+      <ng-template pTemplate="header">
+      </ng-template>
+      <ng-template pTemplate="body" let-notification>
+          <tr>
+              <td class="table-column">{{notification.date}}</td>
+              <td class="table-column">{{notification.context}}</td>
+              <td class="table-column">
+                  <button pButton pRipple type="button" icon="pi pi-external-link" class="p-button p-component p-button-text p-button-icon-only"></button>
+              </td>
+          </tr>
+      </ng-template>
+    </p-table>
+  </div>
+</div>

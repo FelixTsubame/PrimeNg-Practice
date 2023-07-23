@@ -1,0 +1,5 @@
+.wrap {
+  display: flex;
+  padding: 0 40px 0 90px;
+  height: 100%;
+}

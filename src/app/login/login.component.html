@@ -1,0 +1,26 @@
+
+<div class="login">
+  <svg xmlns="http://www.w3.org/2000/svg" width="121" height="120" viewBox="0 0 121 120" fill="none">
+    <path d="M60.5 31.875C60.5 47.408 48.165 60 32.949 60H5.39795V31.875C5.39795 16.342 17.733 3.75 32.949 3.75C48.165 3.75 60.5 16.342 60.5 31.875Z" fill="#17CF97"/>
+    <path d="M60.5 88.125C60.5 72.592 72.835 60 88.051 60H115.602V88.125C115.602 103.658 103.267 116.25 88.051 116.25C72.835 116.25 60.5 103.658 60.5 88.125Z" fill="#17CF97"/>
+    <path d="M5.39795 88.125C5.39795 103.658 17.733 116.25 32.949 116.25H60.5V88.125C60.5 72.592 48.165 60 32.949 60C17.733 60 5.39795 72.592 5.39795 88.125Z" fill="#17CF97"/>
+    <path d="M115.602 31.875C115.602 16.342 103.267 3.75 88.051 3.75H60.5V31.875C60.5 47.408 72.835 60 88.051 60C103.267 60 115.602 47.408 115.602 31.875Z" fill="#17CF97"/>
+  </svg>
+  <div class="welcome">{{welcomeTitle}}</div>
+  <div class="card flex justify-content-center">
+    <div class="flex flex-column gap-2">
+      <label htmlFor="UserName1">{{userNameTitle}}</label><br>
+		  <input pInputText id="UserName1" type="text" placeholder="{{exampleTitle}}" class="p-inputtext p-element p-component"/>
+    </div>
+  </div>
+  <div class="card flex justify-content-center">
+    <div class="flex flex-column gap-2">
+      <label htmlFor="password">{{passwordTitle}}</label><br>
+		  <p-password id="password"
+                  [(ngModel)]="passwordValue"
+                  [feedback]="false"></p-password>
+
+    </div>
+  </div>
+  <p-button label="log in" styleClass="p-button-success" routerLink="/home" ></p-button>
+</div>
